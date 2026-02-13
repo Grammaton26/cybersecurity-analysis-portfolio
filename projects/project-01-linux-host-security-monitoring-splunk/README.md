@@ -38,7 +38,8 @@ index=main source="/var/log/auth.log" "Failed password"
 Purpose
 Detect excessive SSH login failures from the same source IP and username combination, indicating possible brute-force activity.
 
-Screenshot
+```
+### Screenshot
 ![Failed SSH Detection Query](SPL Detection Query.png)
 
 🧪 Attack Simulation (Manual SSH Failures)
@@ -53,16 +54,22 @@ attacker1@localhost
 markdown
 Copy code
 ![SSH Attack Simulation](attack_simulation_ssh_failures.png)
-🔐 Detection 2 — Privilege Escalation via sudo
-SPL Query
-spl
+
+---
+## 🔐 Detection 2 — Privilege Escalation via sudo
+
+### SPL Query
+
+``` spl
 Copy code
 index=main source="/var/log/auth.log" "sudo:"
 | rex field=_raw "sudo:\s+(?<user>[^:]+)\s*:"
 | rex field=_raw "COMMAND=(?<command>.+)$"
 | stats count by user command
 | sort - count
-Purpose
+
+```
+### Purpose
 Monitor execution of privileged commands via sudo to detect suspicious privilege escalation attempts.
 
 Screenshot
