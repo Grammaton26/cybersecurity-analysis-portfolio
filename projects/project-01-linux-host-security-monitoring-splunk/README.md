@@ -58,8 +58,13 @@ attacker1@localhost
 
 ![SSH Attack Simulation](attack_simulation_ssh_failures.png)
 
-🔐 Detection 2 — Privilege Escalation via sudo
-SPL Query
+---
+
+## 🔐 Detection 2 — Privilege Escalation via sudo
+
+### SPL Query
+
+```spl
 index=main source="/var/log/auth.log" "sudo:"
 | rex field=_raw "sudo:\s+(?<user>[^:]+)\s*:"
 | rex field=_raw "COMMAND=(?<command>.+)$"
