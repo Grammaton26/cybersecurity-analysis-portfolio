@@ -74,6 +74,7 @@ Monitor execution of privileged commands via sudo to detect suspicious privilege
 
 ### Screenshot
 
+---
 ## Detection 3 — Root Activity Visibility
 
 ### SPL Query
@@ -92,6 +93,7 @@ Identify root-level activity across the system to improve visibility into admini
 
 ### Screenshot
 
+---
 ## SOC Monitoring Dashboard
 A centralized dashboard was created to provide SOC-style monitoring of:
 
@@ -103,6 +105,7 @@ Root activity metrics
 
 ### Screenshot
 
+---
 ## Saved Detection Reports
 Each detection query was saved as a reusable Splunk report:
 
@@ -114,6 +117,7 @@ SOC - Root Activity Visibility
 
 ### Screenshot
 
+---
 ## Alert Configuration — Excessive SSH Failures
 A scheduled alert was configured to trigger when:
 
@@ -123,6 +127,7 @@ Occur within a 10-minute window
 
 Evaluated every 5 minutes (Cron: */5 * * * *)
 
+---
 ## Alert Settings
 Alert Type: Scheduled
 
@@ -139,6 +144,7 @@ Throttle: Disabled (Lab environment)
 ### Screenshot — Scheduled Alert Configuration
 ![Scheduled Alert Configuration](Scheduled Alert Configuration.png)
 
+---
 ## Trigger Validation
 To validate alert functionality:
 
@@ -151,6 +157,7 @@ Trigger history confirmed successful alert execution
 ### Screenshot — Trigger History
 ![Trigger History](Trigger History.png)
 
+---
 ## Alert Fatigue Considerations
 To avoid excessive false positives:
 
@@ -172,6 +179,7 @@ Alert throttling
 
 Email/SOAR integration
 
+---
 ## Key Skills Demonstrated
 Splunk SPL query development
 
@@ -189,6 +197,7 @@ Attack simulation and validation
 
 Incident detection lifecycle workflow
 
+---
 ## Future Enhancements
 Brute-force detection with time-based charts
 
@@ -200,6 +209,7 @@ Correlation across multiple log sources
 
 Integration with SOAR workflows
 
+---
 ## Author
 Gelin Mawa
 Cybersecurity & Data Analytics Portfolio
