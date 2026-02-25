@@ -43,8 +43,10 @@ index=main source="/var/log/auth.log" "Failed password"
 ### Purpose
 Detect excessive SSH login failures from the same source IP and username combination, indicating possible brute-force activity.
 
-### Failed SSH login attempts before and after simulation
+### Failed SSH login attempts before simulation (no result)
 ![Failed SSH Detection Query](images/detection1.1_failed_ssh_login_attempts.png)
+
+### Failed SSH login attempts after simulation
 ![Failed SSH Detection Query](images/detection1.2_failed_ssh_login_attempts.png)
 
 ---
@@ -55,9 +57,8 @@ To validate the detection, multiple failed SSH login attempts were generated fro
 
 - attacker1@localhost
 
-**Placeholder — Ubuntu terminal screenshot will be inserted here.**
-
-![SSH Attack Simulation](attack_simulation_ssh_failures.png)
+**Ubuntu terminal image.**
+![SSH Attack Simulation](images/attack_simulation_ssh_failures.png)
 
 ---
 ## Detection 2 — Privilege Escalation via sudo
@@ -120,7 +121,8 @@ Each detection query was saved as a reusable Splunk report:
 
 - SOC - Root Activity Visibility
 
-### Screenshot
+### Reports
+![Saved Reports](images/saved_soc_detection_reports_in_splunk.png)
 
 ---
 ## Alert Configuration — Excessive SSH Failures
@@ -145,8 +147,8 @@ A scheduled alert was configured to trigger when:
 
 - **Throttle:** Disabled (Lab environment)
 
-### Screenshot — Scheduled Alert Configuration
-![Scheduled Alert Configuration](Scheduled Alert Configuration.png)
+### Scheduled Alert Configuration
+![Scheduled Alert Configuration](images/scheduled_alert_configuration.png)
 
 ---
 ## Trigger Validation
@@ -158,8 +160,8 @@ To validate alert functionality:
 
 - Trigger history confirmed successful alert execution
 
-### Screenshot — Trigger History
-![Trigger History](Trigger History.png)
+### Trigger History
+![Trigger History](images/trigger_history.png)
 
 ---
 ## Alert Fatigue Considerations
