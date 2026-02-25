@@ -35,14 +35,16 @@ index=main source="/var/log/auth.log" "Failed password"
 | rex field=_raw "Failed password for (invalid user )?(?<user>\S+) from (?<src>\d+\.\d+\.\d+\.\d+)"
 | stats count by src user
 | where count >= 5
-Purpose
-Detect excessive SSH login failures from the same source IP and username combination, indicating possible brute-force activity.
 
 ```
+### Purpose
+Detect excessive SSH login failures from the same source IP and username combination, indicating possible brute-force activity.
+
 ### Screenshot
 ![Failed SSH Detection Query](SPL Detection Query.png)
 
-Attack Simulation (Manual SSH Failures)
+---
+## Attack Simulation (Manual SSH Failures)
 To validate the detection, multiple failed SSH login attempts were generated from:
 
 - fakeuser@localhost
@@ -51,8 +53,6 @@ To validate the detection, multiple failed SSH login attempts were generated fro
 
 **Placeholder — Ubuntu terminal screenshot will be inserted here.**
 
-markdown
-Copy code
 ![SSH Attack Simulation](attack_simulation_ssh_failures.png)
 
 ---
@@ -60,8 +60,7 @@ Copy code
 
 ### SPL Query
 
-``` spl
-Copy code
+``` Splunk spl
 index=main source="/var/log/auth.log" "sudo:"
 | rex field=_raw "sudo:\s+(?<user>[^:]+)\s*:"
 | rex field=_raw "COMMAND=(?<command>.+)$"
@@ -79,8 +78,7 @@ Monitor execution of privileged commands via sudo to detect suspicious privilege
 
 ### SPL Query
 
-``` spl
-Copy code
+``` Splunk spl
 index=main source="/var/log/auth.log" "uid=0"
 | rex field=_raw "for user\s+(?<user>\w+)"
 | stats count by user
