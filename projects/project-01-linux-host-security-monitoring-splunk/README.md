@@ -43,8 +43,9 @@ index=main source="/var/log/auth.log" "Failed password"
 ### Purpose
 Detect excessive SSH login failures from the same source IP and username combination, indicating possible brute-force activity.
 
-### Screenshot
-![Failed SSH Detection Query](SPL Detection Query.png)
+### Failed SSH login attempts before and after simulation
+![Failed SSH Detection Query](images/detection1.1_failed_ssh_login_attempts.png)
+![Failed SSH Detection Query](images/detection1.2_failed_ssh_login_attempts.png)
 
 ---
 ## Attack Simulation (Manual SSH Failures)
