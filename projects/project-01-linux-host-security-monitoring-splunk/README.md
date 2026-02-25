@@ -161,53 +161,53 @@ Trigger history confirmed successful alert execution
 ## Alert Fatigue Considerations
 To avoid excessive false positives:
 
-Threshold set to ≥5 failures
+- Threshold set to ≥5 failures
 
-Short time window (10 minutes)
+- Short time window (10 minutes)
 
-Scheduled execution (not real-time)
+- Scheduled execution (not real-time)
 
-Action limited to internal alert logging
+- Action limited to internal alert logging
 
 In production, additional controls would include:
 
-IP reputation correlation
+- IP reputation correlation
 
-User behavior baselining
+- User behavior baselining
 
-Alert throttling
+- Alert throttling
 
-Email/SOAR integration
+- Email/SOAR integration
 
 ---
 ## Key Skills Demonstrated
-Splunk SPL query development
+- Splunk SPL query development
 
-Regex field extraction (rex)
+- Regex field extraction (rex)
 
-Log parsing and normalization
+- Log parsing and normalization
 
-Scheduled alert configuration
+- Scheduled alert configuration
 
-SOC dashboard design
+- SOC dashboard design
 
-Threshold tuning and alert fatigue mitigation
+- Threshold tuning and alert fatigue mitigation
 
-Attack simulation and validation
+- Attack simulation and validation
 
-Incident detection lifecycle workflow
+- Incident detection lifecycle workflow
 
 ---
 ## Future Enhancements
-Brute-force detection with time-based charts
+- Brute-force detection with time-based charts
 
-Geo-IP enrichment
+- Geo-IP enrichment
 
-Alert throttling configuration
+- Alert throttling configuration
 
-Correlation across multiple log sources
+- Correlation across multiple log sources
 
-Integration with SOAR workflows
+- Integration with SOAR workflows
 
 ---
 ## Author
