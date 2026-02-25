@@ -49,6 +49,9 @@ Detect excessive SSH login failures from the same source IP and username combina
 ### Failed SSH login attempts after simulation
 ![Failed SSH Detection Query](images/detection1.2_failed_ssh_login_attempts.png)
 
+### Failed SSH login attempts detection query
+![Failed SSH Detection Query](images/spl_detection_query.png)
+
 ---
 ## Attack Simulation (Manual SSH Failures)
 To validate the detection, multiple failed SSH login attempts were generated from:
