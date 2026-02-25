@@ -75,7 +75,8 @@ index=main source="/var/log/auth.log" "sudo:"
 ### Purpose
 Monitor execution of privileged commands via sudo to detect suspicious privilege escalation attempts.
 
-### Screenshot
+### Result
+![Privilege Escalation Query](images/detection2_privilege_escalation_via_sudo.png)
 
 ---
 ## Detection 3 — Root Activity Visibility
@@ -93,7 +94,8 @@ index=main source="/var/log/auth.log" "uid=0"
 ### Purpose
 Identify root-level activity across the system to improve visibility into administrative actions.
 
-### Screenshot
+### Result
+![Root Activity Query](images/detection3_root_activity_visibility.png)
 
 ---
 ## SOC Monitoring Dashboard
@@ -105,7 +107,8 @@ A centralized dashboard was created to provide SOC-style monitoring of:
 
 - Root activity metrics
 
-### Screenshot
+### Dashboard
+![SOC Dashboard](images/soc_linux_host_security_monitoring_dashboard.png)
 
 ---
 ## Saved Detection Reports
