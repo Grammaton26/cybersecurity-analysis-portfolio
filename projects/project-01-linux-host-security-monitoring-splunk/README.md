@@ -45,11 +45,11 @@ Detect excessive SSH login failures from the same source IP and username combina
 Attack Simulation (Manual SSH Failures)
 To validate the detection, multiple failed SSH login attempts were generated from:
 
-fakeuser@localhost
+- fakeuser@localhost
 
-attacker1@localhost
+- attacker1@localhost
 
-Placeholder — Ubuntu terminal screenshot will be inserted here.
+**Placeholder — Ubuntu terminal screenshot will be inserted here.**
 
 markdown
 Copy code
@@ -97,11 +97,11 @@ Identify root-level activity across the system to improve visibility into admini
 ## SOC Monitoring Dashboard
 A centralized dashboard was created to provide SOC-style monitoring of:
 
-Failed SSH attempts
+- Failed SSH attempts
 
-Sudo command usage
+- Sudo command usage
 
-Root activity metrics
+- Root activity metrics
 
 ### Screenshot
 
@@ -109,11 +109,11 @@ Root activity metrics
 ## Saved Detection Reports
 Each detection query was saved as a reusable Splunk report:
 
-SOC - Failed SSH Login Attempts
+- SOC - Failed SSH Login Attempts
 
-SOC - Privilege Escalation via sudo
+- SOC - Privilege Escalation via sudo
 
-SOC - Root Activity Visibility
+- SOC - Root Activity Visibility
 
 ### Screenshot
 
@@ -121,25 +121,24 @@ SOC - Root Activity Visibility
 ## Alert Configuration — Excessive SSH Failures
 A scheduled alert was configured to trigger when:
 
-More than 5 failed login attempts
+- More than 5 failed login attempts
 
-Occur within a 10-minute window
+- Occur within a 10-minute window
 
-Evaluated every 5 minutes (Cron: */5 * * * *)
+- Evaluated every 5 minutes (Cron: */5 * * * *)
 
----
 ## Alert Settings
-Alert Type: Scheduled
+- **Alert Type:** Scheduled
 
-Time Range: Last 10 minutes
+- **Time Range:** Last 10 minutes
 
-Trigger Condition: Number of results > 0
+- **Trigger Condition:** Number of results > 0
 
-Action: Add to Triggered Alerts
+- **Action:** Add to Triggered Alerts
 
-Severity: High
+- **Severity:** High
 
-Throttle: Disabled (Lab environment)
+- **Throttle:** Disabled (Lab environment)
 
 ### Screenshot — Scheduled Alert Configuration
 ![Scheduled Alert Configuration](Scheduled Alert Configuration.png)
@@ -148,11 +147,11 @@ Throttle: Disabled (Lab environment)
 ## Trigger Validation
 To validate alert functionality:
 
-The alert was temporarily set to run every minute (* * * * *)
+- The alert was temporarily set to run every minute (* * * * *)
 
-Multiple SSH failures were generated
+- Multiple SSH failures were generated
 
-Trigger history confirmed successful alert execution
+- Trigger history confirmed successful alert execution
 
 ### Screenshot — Trigger History
 ![Trigger History](Trigger History.png)
