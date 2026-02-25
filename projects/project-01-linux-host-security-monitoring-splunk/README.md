@@ -14,14 +14,6 @@ This project focuses on:
 * **Alert Threshold Tuning**
 * **SOC-style Dashboard Design**
 
-This project focuses on:
-
-- SSH brute-force detection
-- Privilege escalation monitoring
-- Root activity visibility
-- Alert threshold tuning
-- SOC-style dashboard design
-
 ---
 
 ## Lab Environment & Prerequisites
@@ -220,5 +212,5 @@ In production, additional controls would include:
 ---
 ## Author
 Gelin Mawa
-Cybersecurity & Data Analytics Portfolio
+Cybersecurity Portfolio
 GitHub: https://github.com/Grammaton26
