@@ -2,9 +2,17 @@
 
 ## Overview
 
-This project demonstrates the design and implementation of a lightweight Security Operations Center (SOC) monitoring solution for a Linux host using Splunk Enterprise.
+This project demonstrates the design and implementation of a lightweight **Security Operations Center (SOC)** monitoring solution for a Linux host using **Splunk Enterprise.**
 
 The objective was to simulate real-world attack scenarios, build custom SPL detections, create a monitoring dashboard, and configure scheduled alerts while minimizing alert fatigue.
+
+### Core Focus Areas:
+This project focuses on:
+* **SSH Brute-force Detection**
+* **Privilege Escalation Monitoring**
+* **Root Activity Visibility**
+* **Alert Threshold Tuning**
+* **SOC-style Dashboard Design**
 
 This project focuses on:
 
@@ -16,13 +24,16 @@ This project focuses on:
 
 ---
 
-## Lab Environment
+## Lab Environment & Prerequisites
+To replicate this environment, the following components were utilized:
 
-- **SIEM Platform:** Splunk Enterprise (Trial License)
-- **Operating System:** Ubuntu Linux (VirtualBox VM)
-- **Log Source:** `/var/log/auth.log`
-- **Index:** `main`
-- **Log Type Monitored:** Authentication & sudo activity
+* **SIEM Platform:** Splunk Enterprise (Trial License)
+* **Virtualization:** Oracle VirtualBox
+* **Operating System:** Ubuntu Linux (Splunk-SIEM-Server)
+* **Log Source:** `/var/log/auth.log`
+* **Log Type:** Authentication, `sudo` activity, and SSH logs
+
+> **Note:** Ensure the Splunk user has read permissions for `/var/log/auth.log` on the Ubuntu VM to enable data ingestion.
 
 ---
 
@@ -211,5 +222,3 @@ In production, additional controls would include:
 Gelin Mawa
 Cybersecurity & Data Analytics Portfolio
 GitHub: https://github.com/Grammaton26
-
-
