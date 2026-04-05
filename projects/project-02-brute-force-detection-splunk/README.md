@@ -1,5 +1,6 @@
-Project 2 — Brute Force Detection & Threat Hunting Using Splunk
-Overview
+# Project 2 — Brute Force Detection & Threat Hunting Using Splunk
+
+## Overview
 
 This project demonstrates how a Security Operations Center (SOC) analyst can detect and investigate SSH brute-force attacks using Splunk Enterprise.
 
@@ -9,21 +10,23 @@ The investigation process includes time-based analysis, attacker attribution, us
 
 This project focuses on:
 
-Time-based attack pattern detection
+* **Time-based attack pattern detection**
 
-SSH brute-force investigation
+* **SSH brute-force investigation**
 
-Source IP attribution
+* **Source IP attribution**
 
-Account targeting analysis
+* **Account targeting analysis**
 
-SIEM detection rule development
+* **SIEM detection rule development**
 
-SOC dashboard monitoring
+* **SOC dashboard monitoring**
 
-Threat hunting queries
+* **Threat hunting queries**
 
-Lab Environment
+---
+
+## Lab Environment
 
 SIEM Platform: Splunk Enterprise (Trial License)
 
