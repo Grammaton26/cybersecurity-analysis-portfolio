@@ -1,2 +1,3 @@
 # Projects
-- Project 1: Linux Host Security Monitoring Using Splunk (in progress)
+- Project 1: Linux Host Security Monitoring Using Splunk
+- Project 2: Brute Force Detection & Threat Hunting Using Splunk
