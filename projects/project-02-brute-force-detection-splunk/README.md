@@ -46,7 +46,7 @@ index=main source="/var/log/auth.log" "Failed password"
 
 Detect abnormal spikes in failed login attempts within short time intervals.
 
-### Screenshot — Time-Based Brute Force Spike
+### Time-Based Brute Force Spike
 ![Time Based Brute Force Spike](images/brute_force_time_spike.png)
 
 ---
@@ -66,7 +66,7 @@ index=main source="/var/log/auth.log" "Failed password"
 
 Identify which accounts attackers attempted to access during the brute-force event.
 
-### Screenshot — Targeted User Accounts
+### Targeted User Accounts
 ![Targeted User Accounts](images/brute_force_targeted_users.png)
 
 ---
@@ -86,7 +86,7 @@ index=main source="/var/log/auth.log" "Failed password"
 
 Identify which IP addresses are responsible for authentication attack attempts.
 
-### Screenshot — Attacker Source Identification
+### Attacker Source Identification
 ![Attaker Source Indentification](images/brute_force_source_ip.png)
 
 ---
@@ -107,7 +107,7 @@ index=main source="/var/log/auth.log" "Failed password"
 
 Identify attacker-to-account relationships during authentication attacks.
 
-### Screenshot — Attacker vs Target Analysis
+### Attacker vs Target Analysis
 ![Attacker vs Target Analysis](images/attacker_vs_target_analysis.png)
 
 ---
@@ -129,7 +129,7 @@ index=main source="/var/log/auth.log" "Failed password"
 
 Detect potential SSH brute-force attacks by identifying accounts receiving ten or more failed login attempts from the same source IP.
 
-### Screenshot — Brute Force Detection Rule
+### Brute Force Detection Rule
 ![Brute Force Detection Rule](images/brute_force_detection_rule.png)
 
 ---
@@ -142,7 +142,7 @@ Report Name:
 
 `SOC - Brute Force Login Detection`
 
-### Screenshot — Detection Report
+### Detection Report
 ![Detection Report](images/soc_bruteforce_detection_report.png)
 
 ---
@@ -158,7 +158,7 @@ Dashboard panels include:
 * Root Activity Visibility
 * Brute Force Login Detection
 
-### Screenshot — SOC Monitoring Dashboard
+### SOC Monitoring Dashboard
 ![SOC Monitoring Dashboard](images/soc_dashboard_bruteforce_panel.png)
 
 ---
@@ -179,7 +179,7 @@ index=main source="/var/log/auth.log" "Failed password"
 
 Identify high-value accounts receiving repeated authentication attack attempts.
 
-### Screenshot — Targeted Accounts Threat Hunting
+### Targeted Accounts Threat Hunting
 ![Targeted Accounts Threat Hunting](images/targeted_accounts_analysis.png)
 
 ---
