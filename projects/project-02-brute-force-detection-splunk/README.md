@@ -10,13 +10,13 @@ The investigation process includes time-based analysis, attacker attribution, us
 
 This project focuses on:
 
-* **Time-based attack pattern detection**
-* **SSH brute-force investigation**
-* **Source IP attribution**
-* **Account targeting analysis**
-* **SIEM detection rule development**
-* **SOC dashboard monitoring**
-* **Threat hunting queries**
+* Time-based attack pattern detection
+* SSH brute-force investigation
+* Source IP attribution
+* Account targeting analysis
+* SIEM detection rule development
+* SOC dashboard monitoring
+* Threat hunting queries
 
 ---
 
@@ -153,10 +153,10 @@ The detection report was integrated into the SOC monitoring dashboard alongside 
 
 Dashboard panels include:
 
-* **Failed SSH Login Attempts**
-* **Privilege Escalation via sudo**
-* **Root Activity Visibility**
-* **Brute Force Login Detection**
+* Failed SSH Login Attempts
+* Privilege Escalation via sudo
+* Root Activity Visibility
+* Brute Force Login Detection
 
 ### Screenshot — SOC Monitoring Dashboard
 ![SOC Monitoring Dashboard](images/soc_dashboard_bruteforce_panel.png)
@@ -207,7 +207,7 @@ In production environments, further improvements would include:
 ## Key Skills Demonstrated
 
 * Splunk SPL query development
-* regex field extraction (rex)
+* regex field extraction (`rex`)
 * time-series analysis
 * brute-force attack detection
 * attacker attribution
