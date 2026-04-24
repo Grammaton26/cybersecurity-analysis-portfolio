@@ -1,4 +1,4 @@
-# **Cybersecurity SOC Analyst Portfolio**
+# Cybersecurity SOC Analyst Portfolio
 
 Hands-on cybersecurity projects focused on Security Operations Center (SOC) monitoring, threat detection, and SIEM analysis using Splunk and Linux log data.
 
@@ -15,7 +15,7 @@ All projects were built in a lab environment using Splunk Enterprise and Ubuntu 
 
 ---
 
-## **Security Tools Used**
+## Security Tools Used
 * Splunk Enterprise
 * Linux (Ubuntu Server)
 * VirtualBox
@@ -25,7 +25,7 @@ All projects were built in a lab environment using Splunk Enterprise and Ubuntu 
 
 ---
 
-## **SOC Skills Demonstrated**
+## SOC Skills Demonstrated
 * SIEM log ingestion
 * Security event monitoring
 * Detection engineering
@@ -37,7 +37,7 @@ All projects were built in a lab environment using Splunk Enterprise and Ubuntu 
 
 ---
 
-## **Cybersecurity Projects**
+## Cybersecurity Projects
 ### Project 1
 **Linux Host Security Monitoring with Splunk**
 
@@ -86,7 +86,7 @@ Planned features:
 
 ---
 
-## **Lab Architecture**
+## Lab Architecture
 
 ```
 Attacker Simulation
