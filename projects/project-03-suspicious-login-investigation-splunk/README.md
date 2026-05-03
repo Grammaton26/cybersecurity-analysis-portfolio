@@ -154,6 +154,11 @@ Although the activity was generated intentionally within the lab environment, th
 
 ---
 
+### SOC Suspicious Login Investigation Dashboard
+![SOC Suspicious Login Investigation Dashboard](images/suspicious_login_investigation_dashboard.png) 
+
+---
+
 ## Key Skills Demonstrated
 
 This project demonstrates several important SOC analyst capabilities:
