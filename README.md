@@ -51,7 +51,7 @@ Features:
 * Scheduled security alerts
 * SOC dashboard creation
 
-[Project Link](projects/project-01-linux-host-security-monitoring-splunk)
+[Project 1 Link](projects/project-01-linux-host-security-monitoring-splunk)
 
 ---
 
@@ -68,7 +68,7 @@ Features:
 * Detection threshold development
 * SOC brute force detection report
 
-[Project Link](projects/project-02-brute-force-detection-splunk)
+[Project 2 Link](projects/project-02-brute-force-detection-splunk)
 
 --- 
 
@@ -83,6 +83,8 @@ Planned features:
 * Suspicious login pattern analysis
 * attacker behavior investigation
 * SOC alert development
+
+[Project 3 Link](projects/project-03-suspicious-login-investigation-splunk)
 
 ---
 
